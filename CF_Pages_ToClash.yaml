@@ -86,7 +86,7 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"vpnfree.pages.dev","type":"vless","server":"www.visa.com","port":8443,"uuid":"abfc7fa7-ec13-49a6-a3bb-b5f5a756c703","tls":true,"servername":"vpnfree.pages.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"vpnfree.pages.dev"}},"client-fingerprint":"random"}
+  - {"name":"vpnfree.pages.dev","type":"vless","server":"sp.rweek.top","port":8443,"uuid":"abfc7fa7-ec13-49a6-a3bb-b5f5a756c703","tls":true,"servername":"vpnfree.pages.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"vpnfree.pages.dev"}},"client-fingerprint":"random"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
