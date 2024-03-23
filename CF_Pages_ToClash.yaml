@@ -86,46 +86,57 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"vpnfree.pages.dev","type":"vless","server":"sp.rweek.top","port":8443,"uuid":"abfc7fa7-ec13-49a6-a3bb-b5f5a756c703","tls":true,"servername":"vpnfree.pages.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"vpnfree.pages.dev"}},"client-fingerprint":"random"}
+  - {"name":"www.digitalocean.com","type":"vless","server":"www.digitalocean.com","port":8443,"uuid":"abfc7fa7-ec13-49a6-a3bb-b5f5a756c703","tls":true,"servername":"vpnfree.pages.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"vpnfree.pages.dev"}},"client-fingerprint":"random"}
+  - {"name":"www.csgo.com","type":"vless","server":"www.csgo.com","port":8443,"uuid":"abfc7fa7-ec13-49a6-a3bb-b5f5a756c703","tls":true,"servername":"vpnfree.pages.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"vpnfree.pages.dev"}},"client-fingerprint":"random"}
+  - {"name":"www.shopify.com","type":"vless","server":"www.shopify.com","port":8443,"uuid":"abfc7fa7-ec13-49a6-a3bb-b5f5a756c703","tls":true,"servername":"vpnfree.pages.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"vpnfree.pages.dev"}},"client-fingerprint":"random"}
+  - {"name":"www.udemy.com","type":"vless","server":"www.udemy.com","port":8443,"uuid":"abfc7fa7-ec13-49a6-a3bb-b5f5a756c703","tls":true,"servername":"vpnfree.pages.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"vpnfree.pages.dev"}},"client-fingerprint":"random"}
+  - {"name":"www.gov.se","type":"vless","server":"www.gov.se","port":8443,"uuid":"abfc7fa7-ec13-49a6-a3bb-b5f5a756c703","tls":true,"servername":"vpnfree.pages.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"vpnfree.pages.dev"}},"client-fingerprint":"random"}
+  - {"name":"www.pcmag.com","type":"vless","server":"www.pcmag.com","port":8443,"uuid":"abfc7fa7-ec13-49a6-a3bb-b5f5a756c703","tls":true,"servername":"vpnfree.pages.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"vpnfree.pages.dev"}},"client-fingerprint":"random"}
+  - {"name":"www.visa.co.jp","type":"vless","server":"www.visa.co.jp","port":8443,"uuid":"abfc7fa7-ec13-49a6-a3bb-b5f5a756c703","tls":true,"servername":"vpnfree.pages.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"vpnfree.pages.dev"}},"client-fingerprint":"random"}
+  - {"name":"sp.rweek.top","type":"vless","server":"sp.rweek.top","port":8443,"uuid":"abfc7fa7-ec13-49a6-a3bb-b5f5a756c703","tls":true,"servername":"vpnfree.pages.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"vpnfree.pages.dev"}},"client-fingerprint":"random"}
+  - {"name":"www.gov.se","type":"vless","server":"www.gov.se","port":8443,"uuid":"abfc7fa7-ec13-49a6-a3bb-b5f5a756c703","tls":true,"servername":"vpnfree.pages.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"vpnfree.pages.dev"}},"client-fingerprint":"random"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - vpnfree.pages.dev
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - vpnfree.pages.dev
+      - www.digitalocean.com
+      - www.csgo.com
+      - www.shopify.com
+      - www.udemy.com
+      - www.gov.se
+      - www.pcmag.com
+      - www.visa.co.jp
+      - sp.rweek.top
+      - www.gov.se
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - vpnfree.pages.dev
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - vpnfree.pages.dev
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - vpnfree.pages.dev
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - vpnfree.pages.dev
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -148,7 +159,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - vpnfree.pages.dev
 
 rules:
 # 本地/局域网地址
