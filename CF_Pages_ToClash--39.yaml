@@ -106,14 +106,14 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - www.digitalocean.com
-      - www.csgo.com
-      - www.shopify.com
-      - www.udemy.com
-      - www.gov.se
-      - www.pcmag.com
-      - www.visa.co.jp
-      - sp.rweek.top
+      - www.whoer.net
+      - singapore.com
+      - www.iplocation.net
+      - www.ipchicken.com
+      - www.visa.com.tw
+      - log.bpminecraft.com
+      - www.wto.org
+      - www.ipaddress.my
   - name: 🌍 国外媒体
     type: select
     proxies:
